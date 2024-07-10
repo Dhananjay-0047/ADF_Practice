@@ -1,0 +1,23 @@
+{
+	"name": "dpsqlDB",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "This is linked service which connect to sqlDB",
+		"parameters": {
+			"databaseName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "dj0047.database.windows.net",
+			"database": "@{linkedService().databaseName}",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "dj0047",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQDIxNEVBMUI2LUQyMUQtNEI5Qy05NzJDLTVDQTUxRjFCRjgzNV9jZThkZDVlMi1kMTVlLTRjZWEtOTk3My1mZmM5ZjQzOGQwNGYiDQp9"
+		}
+	}
+}
