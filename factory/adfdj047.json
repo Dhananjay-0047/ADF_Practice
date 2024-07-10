@@ -1,0 +1,17 @@
+{
+	"name": "adfdj047",
+	"properties": {
+		"globalParameters": {
+			"DatabaseName": {
+				"type": "string",
+				"value": "my_db2"
+			}
+		}
+	},
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5cee1eb2-f0e5-4d05-845f-18abb663b49f",
+		"tenantId": "0098bf9a-3d33-4ed5-8522-67d6d1050b56"
+	}
+}

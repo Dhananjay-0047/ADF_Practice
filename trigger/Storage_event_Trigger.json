@@ -1,0 +1,26 @@
+{
+	"name": "Storage_event_Trigger",
+	"properties": {
+		"description": "it will trigger pipeline once file is available.",
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "Copy_pipeline_example",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/landing/blobs/Product/",
+			"blobPathEndsWith": ".txt",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/a481d012-8e5a-41b3-98c8-994b250ecb29/resourceGroups/my_rg/providers/Microsoft.Storage/storageAccounts/azuredpadls",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
