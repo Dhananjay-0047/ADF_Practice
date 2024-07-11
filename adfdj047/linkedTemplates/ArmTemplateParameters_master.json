@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdj047"
+		},
+		"ADLS_gen2DS_accountKey": {
+			"value": ""
+		},
+		"dpsqlDB_password": {
+			"value": ""
+		},
+		"ADLS_gen2DS_properties_typeProperties_url": {
+			"value": "https://azuredpadls.dfs.core.windows.net/"
+		},
+		"Rest_LS_properties_typeProperties_url": {
+			"value": "https://restcountries.com/v3.1/all"
+		},
+		"dpsqlDB_properties_typeProperties_server": {
+			"value": "dj0047.database.windows.net"
+		},
+		"dpsqlDB_properties_typeProperties_database": {
+			"value": "@{linkedService().databaseName}"
+		},
+		"dpsqlDB_properties_typeProperties_userName": {
+			"value": "dj0047"
+		},
+		"Storage_event_Trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/a481d012-8e5a-41b3-98c8-994b250ecb29/resourceGroups/my_rg/providers/Microsoft.Storage/storageAccounts/azuredpadls"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
